@@ -28,10 +28,10 @@ header {
 
 /* cards */
 
-.d-flex span {
+.d-flex h3 {
     font-family: Oswald;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
 }
 
 .post-body p {
@@ -45,19 +45,17 @@ header {
 }
 
 #crepe-image {
-    padding: 20px;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #berry-image {
-    padding: 20px;
     align-items: center;
     width: 100%;
 }
 
 #pasta-image {
-    padding: 20px;
     align-items: center;
     width: 100%;
 }
@@ -71,5 +69,27 @@ header {
 
 footer {
     background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer h5 {
+    font-family: Courgette;
+    font-size: 2rem;
+}
+
+.d-flex span {
+    font-family: Oswald;
+    font-size: 1rem;
+}
+
+#category-links ul {
+    font-family: Oswald;
+}
+
+#calendar-links ul {
+    font-family: Oswald;
+}
+
+#socialMediaLinks i {
     color: #FFFFFF;
 }

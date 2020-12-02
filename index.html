@@ -13,8 +13,6 @@
 
 <body>
     <header>
-
-
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-transparent">
             <a class="navbar-brand" href="#">Cui'zine</a>
@@ -57,17 +55,19 @@
 
     <div class="blog-body">
         <!-- <span class="blog-title">Derniers articles</span> -->
-        <div class="d-flex justify-content-center"><span>Derniers articles</span></div>
+        <div class="d-flex justify-content-center mt-5">
+            <h3>Derniers articles</h3>
+        </div>
 
         <!-- cards -->
         <div class="container">
             <div class="row">
                 <!-- Suzette -->
-                <div class="col-12">
+                <div class="col-12 d-flex flex-column">
                     <img id="crepe-image" src="./img/articles/suzette/suzette-small.jpg" alt="crepe-picture-with-topping">
                     <div class="post-body">
-                        <h5 class="post-title">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
-                        <p class="post-text">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
+                        <h5 class="post-title mt-4">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
+                        <p class="post-text mb-4">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
                     </div>
                 </div>
             </div>
@@ -80,8 +80,8 @@
                 <div class="col-12">
                     <img id="berry-image" src="./img/articles/metro/metro-small.jpg" alt="berry-picture-on-plate">
                     <div class="post-body">
-                        <h5 class="post-title">Le Métro dessert</h5>
-                        <p class="post-text">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour
+                        <h5 class="post-title mt-4">Le Métro dessert</h5>
+                        <p class="post-text mb-4">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour
                             manger ? Clémentine entre en gare et nous donne son avis</p>
                     </div>
                 </div>
@@ -95,58 +95,61 @@
                 <div class="col-12">
                     <img id="pasta-image" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-with-pesto">
                     <div class="post-body">
-                        <h5 class="post-title">Vitaly, le végan italien</h5>
-                        <p class="post-text">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                        <h5 class="post-title mt-4">Vitaly, le végan italien</h5>
+                        <p class="post-text mb-4">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="d-inline-flex p-2 bd-highlight"><span>Voir les articles précédents</span></div>
+        <div class="d-inline-flex pl-4"><span>Voir les articles précédents</span></div>
     </div>
+
+
+
 
     <!-- Footer -->
     <footer class="page-footer font-small black pt-4">
         <!-- Footer Links -->
-        <div class="container-fluid text-left text-md-left">
+        <div class="container-fluid text-left text-md-left ml-5">
             <!-- Grid row -->
             <div class="row">
                 <!-- Grid column 1-->
-                <div class="col-md-6">
+                <div class="col-12" id="category-links">
                     <!-- Content -->
                     <h5 class="links-title"> Catégories</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Revues</a>
+                            <a href="#" class="text-white">Revues</a>
                         </li>
                         <li>
-                            <a href="#">Recettes</a>
+                            <a href="#" class="text-white">Recettes</a>
                         </li>
                         <li>
-                            <a href="#">Découvertes</a>
+                            <a href="#" class="text-white">Découvertes</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Grid column 2-->
-                <div class="col-md-6">
+                <div class="col-12" id="calendar-links">
                     <!-- Content -->
                     <h5 class="links-title"> Archives</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">2019</a>
+                            <a href="#" class="text-white">2019</a>
                         </li>
                         <li>
-                            <a href="#">2018</a>
+                            <a href="#" class="text-white">2018</a>
                         </li>
                         <li>
-                            <a href="#">2017</a>
+                            <a href="#" class="text-white">2017</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Form -->
-                <div class="col-md-6">
+                <div class="col-12">
                     <div class="d-flex justify-content-left"><span>Newsletter</span></div>
                     <form class="form-inline">
                         <input class="form-control mr-md-2" type="text" placeholder="Email...">
@@ -156,20 +159,19 @@
 
                 <!-- Social Media -->
                 <div class="col-md-6">
-                    <div class="d-flex justify-content-left"><span>Partager</span></div>
-                    <ul>
-                        <li><i class="fab fa-linkedin"></i>
-                            </i>
-                            <a href="#"></a>
+                    <div class="d-flex justify-content-left pt-2"><span>Partager</span></div>
+                    <ul id="socialMediaLinks" class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
                         </li>
-                        <li><i class="fab fa-twitter-square"></i>
-                            <a href="#"></a>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
                         </li>
-                        <li><i class="fab fa-facebook-square"></i>
-                            <a href="#"></a>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
                         </li>
-                        <li><i class="fab fa-instagram-square"></i>
-                            <a href="#"></a>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
                         </li>
                     </ul>
                 </div>
