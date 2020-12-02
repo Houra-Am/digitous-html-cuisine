@@ -13,178 +13,170 @@
 
 <body>
     <header>
-        <!-- Heading & Navigation bar-->
-        <div class="bg-img">
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <!-- Brand name -->
-                <a class="navbar-brand" href="#">Cui'zine</a>
 
-                <!-- Collapsible Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span></button>
 
-                <!-- Collapsible Button Links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 3</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-transparent">
+            <a class="navbar-brand" href="#">Cui'zine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="jumbotron">
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-4 col-4 offset-4">
-                            <img id="white-logo" src="./img/logo_square_white.png" alt="cuisine-blog-white-logo">
-                        </div>
-                    </div>
-                    <div class="row" id="title-holder">
-                        <div class="offset-3 col-6 offset-3">
-                            <h3 class="text-center">Cui'zine</h3>
-                        </div>
-                    </div>
-                    <div class="row" id="subtitle-holder">
-                        <div class="offset-3 col-6 offset-3">
-                            <h4 class="text-center">Le mag cuisine</h4>
-                        </div>
-                    </div>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
+        <hr class="bg-light">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <img id="white-logo" src="./img/logo_square_white.png" alt="cuisine-blog-white-logo">
+                    <h2 id="title-holder">Cui'zine</h2>
+                    <h3 id="subtitle-holder">Le mag cuisine</h3>
                 </div>
             </div>
         </div>
-
     </header>
 
 
-
     <div class="blog-body">
-
         <!-- <span class="blog-title">Derniers articles</span> -->
         <div class="d-flex justify-content-center"><span>Derniers articles</span></div>
 
         <!-- cards -->
-        <div class="card mb-3">
-            <img id="crepe-image" src="./img/articles/suzette/suzette-small.jpg" alt="crepe-picture-with-topping">
-            <div class="card-body">
-                <h5 class="card-title">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
-                <p class="card-text">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
-            </div>
-        </div>
-
-
-        <div class="card mb-3">
-            <img id="berry-image" src="./img/articles/metro/metro-small.jpg" alt="berry-picture-on-plate">
-            <div class="card-body">
-                <h5 class="card-title">Le Métro dessert</h5>
-                <p class="card-text">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour manger
-                    ? Clémentine entre en gare et nous donne son avis</p>
-            </div>
-        </div>
-
-        <div class="card mb-3">
-            <img id="pasta-image" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-with-pesto">
-            <div class="card-body">
-                <h5 class="card-title">Vitaly, le végan italien</h5>
-                <p class="card-text">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
-            </div>
-
-            <div class="d-inline-flex p-2 bd-highlight"><span>Voir les articles précédents</span></div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="page-footer font-small black pt-4">
-            <!-- Footer Links -->
-            <div class="container-fluid text-left text-md-left">
-                <!-- Grid row -->
-                <div class="row">
-                    <!-- Grid column 1-->
-                    <div class="col-md-6">
-                        <!-- Content -->
-                        <h5 class="links-title"> Catégories</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">Revues</a>
-                            </li>
-                            <li>
-                                <a href="#">Recettes</a>
-                            </li>
-                            <li>
-                                <a href="#">Découvertes</a>
-                            </li>
-                        </ul>
+        <div class="container">
+            <div class="row">
+                <!-- Suzette -->
+                <div class="col-12">
+                    <img id="crepe-image" src="./img/articles/suzette/suzette-small.jpg" alt="crepe-picture-with-topping">
+                    <div class="post-body">
+                        <h5 class="post-title">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
+                        <p class="post-text">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
                     </div>
-
-                    <!-- Grid column 2-->
-                    <div class="col-md-6">
-                        <!-- Content -->
-                        <h5 class="links-title"> Archives</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">2019</a>
-                            </li>
-                            <li>
-                                <a href="#">2018</a>
-                            </li>
-                            <li>
-                                <a href="#">2017</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Form -->
-                    <div class="col-md-6">
-                        <div class="d-flex justify-content-left"><span>Newsletter</span></div>
-                        <form class="form-inline">
-                            <input class="form-control mr-md-2" type="text" placeholder="Email...">
-                            <button class="btn btn-outline-light">S'inscrire</button>
-                        </form>
-                    </div>
-
-                    <!-- Social Media -->
-                    <div class="col-md-6">
-                        <div class="d-flex justify-content-left"><span>Partager</span></div>
-                        <ul>
-                            <li><i class="fab fa-linkedin"></i>
-                                </i>
-                                <a href="#"></a>
-                            </li>
-                            <li><i class="fab fa-twitter-square"></i>
-                                <a href="#"></a>
-                            </li>
-                            <li><i class="fab fa-facebook-square"></i>
-                                <a href="#"></a>
-                            </li>
-                            <li><i class="fab fa-instagram-square"></i>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
-
             </div>
+        </div>
 
 
-        </footer>
+        <div class="container">
+            <div class="row">
+                <!-- Métro -->
+                <div class="col-12">
+                    <img id="berry-image" src="./img/articles/metro/metro-small.jpg" alt="berry-picture-on-plate">
+                    <div class="post-body">
+                        <h5 class="post-title">Le Métro dessert</h5>
+                        <p class="post-text">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour
+                            manger ? Clémentine entre en gare et nous donne son avis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="container">
+            <div class="row">
+                <!-- Vitaly -->
+                <div class="col-12">
+                    <img id="pasta-image" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-with-pesto">
+                    <div class="post-body">
+                        <h5 class="post-title">Vitaly, le végan italien</h5>
+                        <p class="post-text">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="d-inline-flex p-2 bd-highlight"><span>Voir les articles précédents</span></div>
     </div>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small black pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-left text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column 1-->
+                <div class="col-md-6">
+                    <!-- Content -->
+                    <h5 class="links-title"> Catégories</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Revues</a>
+                        </li>
+                        <li>
+                            <a href="#">Recettes</a>
+                        </li>
+                        <li>
+                            <a href="#">Découvertes</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Grid column 2-->
+                <div class="col-md-6">
+                    <!-- Content -->
+                    <h5 class="links-title"> Archives</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">2019</a>
+                        </li>
+                        <li>
+                            <a href="#">2018</a>
+                        </li>
+                        <li>
+                            <a href="#">2017</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Form -->
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-left"><span>Newsletter</span></div>
+                    <form class="form-inline">
+                        <input class="form-control mr-md-2" type="text" placeholder="Email...">
+                        <button class="btn btn-outline-light">S'inscrire</button>
+                    </form>
+                </div>
 
-
-
+                <!-- Social Media -->
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-left"><span>Partager</span></div>
+                    <ul>
+                        <li><i class="fab fa-linkedin"></i>
+                            </i>
+                            <a href="#"></a>
+                        </li>
+                        <li><i class="fab fa-twitter-square"></i>
+                            <a href="#"></a>
+                        </li>
+                        <li><i class="fab fa-facebook-square"></i>
+                            <a href="#"></a>
+                        </li>
+                        <li><i class="fab fa-instagram-square"></i>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
