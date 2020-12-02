@@ -30,6 +30,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .jumbotron {
@@ -38,8 +39,50 @@
     opacity: 70%;
 }
 
-.title,
-.sub-title {
+#title-holder,
+#subtitle-holder {
     font-family: Courgette;
     font-size: 2rem;
+    text-align: center;
+}
+
+#title-holder h3 {
+    margin: 0 auto;
+}
+
+
+/* cards */
+
+.d-flex span {
+    font-family: Oswald;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-family: Oswald;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.card-body h5 {
+    font-family: Courgette;
+}
+
+#crepe-image {
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+#berry-image {
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+#pasta-image {
+    padding: 20px;
+    align-items: center;
+    width: 100%;
 }
