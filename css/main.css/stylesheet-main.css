@@ -86,3 +86,10 @@
     align-items: center;
     width: 100%;
 }
+
+.d-inline-flex span {
+    font-family: Oswald;
+    justify-content: left;
+    font-weight: normal;
+    padding: 10px;
+}
