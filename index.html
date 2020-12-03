@@ -52,67 +52,96 @@
         </div>
     </header>
 
-
-    <div class="blog-body">
-        <!-- <span class="blog-title">Derniers articles</span> -->
-        <div class="d-flex justify-content-center pt-5 pb-3">
+    <div class="blog-body" class="container-fluid">
+        <!-- derniers articles -->
+        <div id="post-heading" class="row col-auto justify-content-center pt-5 pb-5">
             <h3>Derniers articles</h3>
         </div>
-
         <!-- posts -->
-        <div class="container">
-            <div class="row justify-content-md-between">
-                <!-- Suzette -->
-                <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
-                    <img class="float-md-left" id="crepe-image" src="./img/articles/suzette/suzette-small.jpg" alt="crepe-picture-with-topping">
+        <div id="articles" class="row col-auto">
+
+            <div class="col-12 col-lg-8">
+                <div class="col-12 row pb-lg-3">
+                    <!-- Suzette -->
+                    <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
+                        <img class="img-fluid" id="crepe-image" src="./img/articles/suzette/suzette-small.jpg" alt="crepe-picture-with-topping">
+                    </div>
+                    <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0 ">
+                        <h5 class="post-title">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
+                        <p class="post-text ">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
+                    </div>
                 </div>
-                <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0">
-                    <h5 class="post-title">Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h5>
-                    <p class="post-text ">La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!</p>
+
+                <div class="col-12 row pb-lg-3">
+                    <!-- Métro -->
+                    <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
+                        <img class="img-fluid" id="berry-image" src="./img/articles/metro/metro-small.jpg" alt="berry-picture-on-plate">
+                    </div>
+                    <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0">
+                        <h5 class="post-title">Le Métro dessert</h5>
+                        <p class="post-text">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour
+                            manger ? Clémentine entre en gare et nous donne son avis</p>
+                    </div>
+                </div>
+
+                <div class="col-12 row">
+                    <!-- Vitaly -->
+                    <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
+                        <img class="img-fluid" id="pasta-image" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-with-pesto">
+                    </div>
+                    <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0">
+                        <h5 class="post-title">Vitaly, le végan italien</h5>
+                        <p class="post-text">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <!-- right side newsletter -->
+            <div id="search-sidebar" class="col-lg-3 d-none d-lg-block">
+                <h3>Recherche</h3>
+                <form>
+                    <div class="form-group d-none d-lg-block d-md-none mb-lg-0">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Recherche...">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12">Ok</button>
+                </form>
 
-        <div class="container">
-            <div class="row justify-content-md-between">
-                <!-- Métro -->
-                <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
-                    <img id="berry-image" src="./img/articles/metro/metro-small.jpg" alt="berry-picture-on-plate">
-                </div>
-                <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0">
-                    <h5 class="post-title">Le Métro dessert</h5>
-                    <p class="post-text">Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour manger
-                        ? Clémentine entre en gare et nous donne son avis</p>
-                </div>
+                <h3>Newsletter</h3>
+                <form>
+                    <div class="form-group d-none d-lg-block d-md-none mb-lg-0">
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email...">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12">S'inscrire</button>
+                </form>
 
+                <h3>Partager</h3>
+                <ul id="socialMediaLinksSidebar" class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </ul>
             </div>
+            <!-- right side newsletter -->
         </div>
-
-
+        <!-- previous posts -->
         <div class="container">
-            <div class="row justify-content-md-between">
-                <!-- Vitaly -->
-                <div class="col-12 col-md-5 d-flex flex-column pb-md-3">
-                    <img id="pasta-image" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-with-pesto">
-                </div>
-                <div class="post-body col-12 col-md-7 pt-sm-3 pt-md-0">
-                    <h5 class="post-title">Vitaly, le végan italien</h5>
-                    <p class="post-text">Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-md-between">
-                <div class="col-12 col-md-5 d-flex flex-column pt-3 pb-3">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-7 d-flex flex-column pt-3 pb-3">
                     <span> « Voir les articles précédents</span>
                 </div>
             </div>
         </div>
+        <!-- previous posts -->
     </div>
-
 
 
 
@@ -123,7 +152,7 @@
             <!-- Grid row -->
             <div class="row">
                 <!-- Grid column 1-->
-                <div class="col-12" id="category-links">
+                <div class="col-12 col-lg-4" id="category-links">
                     <!-- Content -->
                     <h5 class="links-title"> Catégories</h5>
                     <ul class="list-unstyled">
@@ -140,7 +169,7 @@
                 </div>
 
                 <!-- Grid column 2-->
-                <div class="col-12" id="calendar-links">
+                <div class="col-12 col-lg-4" id="calendar-links">
                     <!-- Content -->
                     <h5 class="links-title"> Archives</h5>
                     <ul class="list-unstyled">
@@ -157,18 +186,17 @@
                 </div>
 
                 <!-- Form -->
-                <div class="col-12">
+                <div class="col-12 col-lg-4">
                     <div class="d-flex justify-content-left"><span>Newsletter</span></div>
                     <form class="form-inline">
-                        <input class="form-control mr-md-2" type="text" placeholder="Email...">
+                        <input class="form-control mr-md-2" type="email" placeholder="Email...">
                         <button class="btn btn-outline-light">S'inscrire</button>
                     </form>
-                </div>
 
-                <!-- Social Media -->
-                <div class="col-md-6">
+
+                    <!-- Social Media -->
                     <div class="d-flex justify-content-left pt-2"><span>Partager</span></div>
-                    <ul id="socialMediaLinks" class="list-unstyled list-inline">
+                    <ul id="socialMediaLinksBottom" class="list-unstyled list-inline">
                         <li class="list-inline-item">
                             <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
                         </li>
@@ -187,6 +215,8 @@
         </div>
     </footer>
     </div>
+
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

@@ -25,8 +25,16 @@ header {
     text-align: center;
 }
 
+#navbarNav li {
+    font-family: Oswald;
+}
+
 
 /* cards */
+
+#post-heading h3 {
+    font-family: Oswald;
+}
 
 .d-flex h3 {
     font-family: Oswald;
@@ -91,5 +99,28 @@ footer h5 {
 }
 
 #socialMediaLinks i {
+    color: #FFFFFF;
+}
+
+#search-sidebar button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: #000000 1px solid;
+}
+
+#search-sidebar button :hover {
+    background-color: gray;
+}
+
+#search-sidebar h3 {
+    font-family: Courgette;
+    font-size: 1rem;
+}
+
+#socialMediaLinksSidebar i {
+    color: #000000;
+}
+
+#socialMediaLinksBottom i {
     color: #FFFFFF;
 }
