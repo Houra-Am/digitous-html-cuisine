@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/stylesheet-main.css">
+    <!-- Don't forget to adapt homepage style for contact style -->
     <link rel="stylesheet" href="./css/stylesheet-homapage.css">
+    <link rel="stylesheet" href="./css/stylesheet-contact.css">
     <script src="https://kit.fontawesome.com/8861baa14a.js" crossorigin="anonymous"></script>
-    <title>Cui'zine blog</title>
+    <title>Contact us | Cui'zine blog</title>
 </head>
 
+
 <body>
+    <!-- Presentation section -->
     <header>
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-transparent">
@@ -19,70 +23,64 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Equipe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-
+        <!-- Separator line -->
         <hr class="bg-light">
+
+        <!-- Logo section -->
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                     <img id="white-logo" src="./img/logo_square_white.png" alt="cuisine-blog-white-logo">
-                    <h2 id="title-holder">Cui'zine</h2>
-                    <h3 id="subtitle-holder">Le mag cuisine</h3>
+                    <h2 id="title-holder">Nous contacter</h2>
                 </div>
             </div>
         </div>
     </header>
+    <!-- Presentation section -->
 
-    <!-- #blog-body -->
-    <div id="blog-body" class="container-fluid">
-        <div class="row justify-content-center pt-4 pb-4">
-            <h3>Derniers articles</h3>
+    <!-- Contact section -->
+    <div id="contact-body" class="container-fluid">
+        <div id="contact-section" class="row">
+            <div id="contact-title" class="justify-content-start">
+                <h3>Contact Adresse</h3>
+            </div>
+            <div id="adresse-line" class="col-12">
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li>Station F</li>
+                        <li>5 Parvis Alan Turing</li>
+                        <li>75013 Paris</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="posts" class="row">
-            <div id="blog-posts" class="col-12 col-lg-8">
-                <div class="col-12 row">
-                    <div class="col-12 col-md-4 d-flex align-items-center">
-                        <img class="img-fluid" src="./img/articles/suzette/suzette-small.jpg" alt="crepes" />
+        <div id="location-map" class="row">
+            <div id="map-section" class="col-12 col-lg-7 align-items-start">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=station%20F%205%20Parvis%20Alan%20Turing%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.whatismyip-address.com/divi-discount/"></a>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <h3>Chez suzette</h3>
-                        <p> La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin!
-                        </p>
-                    </div>
-                    <!-- suzette -->
                 </div>
-                <div class="col-12 row">
-                    <div class="col-12 col-md-4 d-flex align-items-center">
-                        <img class="img-fluid" src="./img/articles/metro/metro-small.jpg" alt="berries" />
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <h3>Le métro dessert</h3>
-                        <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. A voir absolument, mais qu'en est-il d'y aller pour
-                            manger ? Clémentine entre en gare et nous donne son avis</p>
-                    </div>
-                    <!-- metro -->
-                </div>
-                <div class="col-12 row">
-                    <div class="col-12 col-md-4 d-flex align-items-center">
-                        <img class="img-fluid" src="./img/articles/vitaly/vitaly-small.jpg" alt="pasta-pesto" />
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <h3>Vitaly</h3>
-                        <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
-                    </div>
-                    <!-- vitaly -->
-                </div>
-                <!-- #blog-body -->
             </div>
             <!-- #sidebar -->
             <div id="sidebar" class="col-lg-4 d-none d-lg-block">
@@ -109,14 +107,10 @@
                 </ul>
             </div>
         </div>
-        <!-- link to older posts -->
-        <div class="row">
-            <div class="col-11 offset-1 pb-4">
-                <a href="#" id="older-posts-link">&laquo; voir les articles précédents</a>
-            </div>
-        </div>
-        <!-- link to older posts -->
     </div>
+
+    </div>
+    <!-- Contact section -->
 
     <!-- Footer -->
     <footer class="page-footer font-small black pt-4">
@@ -140,7 +134,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Grid column 2-->
                 <div class="col-12 col-lg-4" id="calendar-links">
                     <!-- Content -->
@@ -157,16 +150,15 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Form -->
                 <div class="col-12 col-lg-4">
-                    <div id="newsletter-register" class="d-flex justify-content-left"><span>Newsletter</span></div>
+                    <div class="d-flex justify-content-left"><span>Newsletter</span></div>
                     <form class="form-inline">
                         <input class="form-control mr-md-2" type="email" placeholder="Email...">
                         <button class="btn btn-outline-light">S'inscrire</button>
                     </form>
                     <!-- Social Media -->
-                    <div id="share" class="d-flex justify-content-left pt-2"><span>Partager</span></div>
+                    <div class="d-flex justify-content-left pt-2"><span>Partager</span></div>
                     <ul id="socialMediaLinksBottom" class="list-unstyled list-inline">
                         <li class="list-inline-item">
                             <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -186,7 +178,6 @@
         </div>
     </footer>
     </div>
-
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

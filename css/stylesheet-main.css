@@ -1,15 +1,82 @@
 @font-face {
     font-family: 'Oswald';
     src: url("./../font/Oswald-Regular.ttf");
-    font-weight: normal;
 }
 
 @font-face {
     font-family: 'Courgette';
     src: url("./../font/Courgette-Regular.ttf");
-    font-weight: normal;
 }
 
-body {
-    margin: 0;
+
+/* Navbar */
+
+header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./../img/header.jpg);
+    height: 400px;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    font-family: Courgette;
+    font-size: 2rem;
+}
+
+#navbarNav li {
+    font-family: Oswald;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer h5 {
+    font-family: Courgette;
+    font-size: 2rem;
+}
+
+#newsletter-register span {
+    font-family: Oswald;
+    font-size: 1rem;
+}
+
+#category-links ul {
+    font-family: Oswald;
+}
+
+#calendar-links ul {
+    font-family: Oswald;
+}
+
+#socialMediaLinks i {
+    color: #FFFFFF;
+}
+
+#search-sidebar button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: #000000 1px solid;
+}
+
+#search-sidebar button :hover {
+    background-color: gray;
+}
+
+#search-sidebar h3 {
+    font-family: Courgette;
+    font-size: 1rem;
+}
+
+#socialMediaLinksSidebar i {
+    color: #000000;
+}
+
+#socialMediaLinksBottom i {
+    color: #FFFFFF;
+}
+
+#share span {
+    font-family: Oswald;
 }

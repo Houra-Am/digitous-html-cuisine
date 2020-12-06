@@ -1,0 +1,30 @@
+.mapouter {
+    position: relative;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+}
+
+#location-map {
+    margin-bottom: 40px;
+}
+
+#contact-title {
+    font-family: Courgette;
+    margin-left: 20px;
+}
+
+#adresse-line li {
+    font-family: Oswald;
+}
+
+#adresse-line {
+    margin-bottom: 20px;
+}
+
+#contact-section {
+    padding: 0px;
+    margin-top: 40px;
+}
